@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <limits> // For numeric_limits
-
+#include <limits>
 using namespace std;
 
 struct Task {
@@ -86,8 +85,8 @@ int main() {
         cin >> choice;
 
         if (cin.fail()) {
-            cin.clear(); // clear input error
-            cin.ignore(numeric_limits<streamsize>::max(), '\n'); // discard bad input
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
             cout << "\nInvalid input. Please enter a number between 1 and 5.\n";
             continue;
         }
