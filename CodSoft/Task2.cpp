@@ -1,5 +1,5 @@
 #include <iostream>
-#include <limits> // For input validation
+#include <limits>
 
 using namespace std;
 
@@ -12,8 +12,8 @@ int main() {
     // Input first number
     cout << "Enter the first number: ";
     while (!(cin >> num1)) {
-        cin.clear(); // Clear the error flag
-        cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Discard bad input
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout << "Invalid input. Please enter a valid number: ";
     }
 
